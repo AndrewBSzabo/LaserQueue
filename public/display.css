@@ -1,0 +1,137 @@
+body {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    font-family: 'Titillium Web';
+    background: #626262;
+    color: #FFFFFF;
+
+    margin: 1vmin;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: hidden;
+}
+
+#page {
+    height: 98vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#title {
+    height: 12.5%;
+
+    background: #0a304e;
+    border: 3px solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 10vh;
+}
+
+#header {
+    height: 35%;
+    
+    color: #000000;
+    background: #0a304e;
+    border: 3px solid #000000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#lasers {
+    height: 95%;
+
+    font-size: 5vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#lasers div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.laser {
+    width: 24%;
+    text-align: center;
+}
+
+#queue {
+    height: 47.5%;
+
+    background: #0a304e;
+    border:3px solid #000000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+}
+
+#queue-text {
+    margin: 1% 1% 0.5% 1%;
+    font-size: 6vh;
+}
+
+#queue-list {
+    height: 100%;
+    font-size: 5vh;
+    margin: 0.5% 1% 1% 1%;
+}
+
+#list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#list div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline;
+}
+
+#list li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+    margin: 0 0 0.3% 0;
+    padding: 0 5px;
+}
+
+#list li .time {
+    float: right;
+}
+  
+#list li:before {
+    content: counter(list) ".\00a0";
+    float: left;
+}
+
+#list li:nth-child(odd) {
+    background-color: #626262cc;
+}
+
+#list li:nth-child(even) {
+    background-color: #62626267;
+}

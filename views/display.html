@@ -1,0 +1,32 @@
+<!-- html page for laser queue-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Titillium Web' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="/display.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="/display.js"></script>
+        <title>Laser Cutter Queue Display</title>
+    </head>
+    <body>
+        <div id="page">
+            <!-- div for page title -->
+            <div id="title">
+                Laser Cutter Queue
+            </div>
+    
+            <!-- div for laser status -->
+            <div id="header">
+                <div id="lasers"></div>
+            </div>
+
+            <!-- div for queue -->
+            <div id="queue">
+                <div id="queue-text">Current Queue</div>
+                <!-- the ordered list that displayes the current queue -->
+                <div id="queue-list"><ol id="list"></ol></div>
+            </div>
+        </div>
+    </body>
+</html>
